@@ -27,6 +27,7 @@ public class HelloController {
         if (myEnv == null) {
             myEnv = "default";
         }
+
         myMap.put("myEnv", myEnv);
         return myMap;
     }
