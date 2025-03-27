@@ -49,7 +49,6 @@ env:
   WORKLOAD_IDENTITY_PROVIDER: 'projects/712262495602/locations/global/workloadIdentityPools/github/providers/my-repo' # TODO: update to your workload identity provider
 
 
-
 jobs:
   setup-build-publish-deploy:
     name: 'Setup, Build, Publish, and Deploy'
