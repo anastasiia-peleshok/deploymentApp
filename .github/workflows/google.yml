@@ -38,8 +38,6 @@ on:
     branches:
       - "main"
 
-
-
 env:
   PROJECT_ID: 'spiritual-tiger-453909-c0' # TODO: update to your Google Cloud project ID
   GAR_LOCATION: 'us-central1' # TODO: update to your region
@@ -49,6 +47,8 @@ env:
   REPOSITORY: 'deployment' # TODO: update to your Artifact Registry docker repository name
   IMAGE: 'static-site'
   WORKLOAD_IDENTITY_PROVIDER: 'projects/712262495602/locations/global/workloadIdentityPools/github/providers/my-repo' # TODO: update to your workload identity provider
+
+
 
 jobs:
   setup-build-publish-deploy:
