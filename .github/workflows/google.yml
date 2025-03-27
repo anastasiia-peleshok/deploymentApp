@@ -36,7 +36,11 @@ name: 'Build and Deploy to GKE'
 on:
   push:
     branches:
-      - '"main"'
+      - "main"
+  workflow_dispatch:
+    tags:
+      description: 'Test scenario tags'
+
 
 env:
   PROJECT_ID: 'spiritual-tiger-453909-c0' # TODO: update to your Google Cloud project ID
