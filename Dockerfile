@@ -2,8 +2,6 @@ FROM openjdk:17-jdk-alpine
 
 WORKDIR /app
 
-RUN mvn package
-
 COPY target/deployment-0.0.1-SNAPSHOT.jar /app/target/deployment-0.0.1-SNAPSHOT.jar
 
 EXPOSE 6969
