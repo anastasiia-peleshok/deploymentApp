@@ -47,7 +47,7 @@ env:
   REPOSITORY: 'deployment' # TODO: update to your Artifact Registry docker repository name
   IMAGE: 'deployment-app'
   WORKLOAD_IDENTITY_PROVIDER: 'projects/712262495602/locations/global/workloadIdentityPools/github/providers/my-repo' # TODO: update to your workload identity provider
-  SERVICE_ACCOUNT: 'github@spiritual-tiger-453909-c0.iam.gserviceaccount.com''
+  SERVICE_ACCOUNT: 'github@spiritual-tiger-453909-c0.iam.gserviceaccount.com'
 
 
 jobs:
