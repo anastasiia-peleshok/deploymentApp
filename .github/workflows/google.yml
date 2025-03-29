@@ -37,6 +37,7 @@ on:
   push:
     branches:
       - "main"
+      -
 
 env:
   PROJECT_ID: 'spiritual-tiger-453909-c0' # TODO: update to your Google Cloud project ID
