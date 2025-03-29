@@ -79,6 +79,7 @@ jobs:
         with:
           workload_identity_provider: '${{ env.WORKLOAD_IDENTITY_PROVIDER }}'
           service_account: '${{ env.SERVICE_ACCOUNT }}'
+          credentials_json: '${{ secrets.SERVICE_ACCOUNT }}'
 
       - name: Check Permissions
         run: gcloud auth list
