@@ -51,7 +51,6 @@ env:
   SERVICE_ACCOUNT: 'github@spiritual-tiger-453909-c0.iam.gserviceaccount.com'
 
 
-
 jobs:
   setup-build-publish-deploy:
     name: 'Setup, Build, Publish, and Deploy'
@@ -79,6 +78,9 @@ jobs:
         with:
           workload_identity_provider: '${{ env.WORKLOAD_IDENTITY_PROVIDER }}'
           service_account: '${{ env.SERVICE_ACCOUNT }}'
+
+      - name: Check Permissions
+        run: gcloud auth list
 
       # Authenticate Docker to Google Cloud Artifact Registry
       - name: 'Docker Auth'
